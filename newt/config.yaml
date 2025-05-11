@@ -19,6 +19,7 @@ schema:
   PANGOLIN_ENDPOINT: "str"
   NEWT_ID: "str"
   NEWT_SECRET: "str"
+  LOG_LEVEL: "list(trace|debug|info|notice|warning|error|fatal)?"
 # Ensure that environment variables are set correctly
 map:
   - config:rw

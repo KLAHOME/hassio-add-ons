@@ -2,6 +2,7 @@ name: "Newt Client"
 version: "1.2.1"
 slug: "kla-newt"
 description: "Secure Network Client for Remote Access"
+icon: "icon.png"
 arch:
   - amd64
 startup: system

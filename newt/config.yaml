@@ -1,0 +1,30 @@
+name: "Newt Client"
+version: "1.4.2"
+slug: "kla-newt"
+description: "Secure Network Client for Remote Access"
+icon: "icon.png"
+arch:
+  - amd64
+startup: system
+boot: auto
+host_network: true
+privileged:
+  - SYS_ADMIN
+  - NET_ADMIN
+  - DAC_READ_SEARCH
+options:
+  PANGOLIN_ENDPOINT: "!secret newt_endpoint"
+  NEWT_ID: "!secret newt_id"
+  NEWT_SECRET: "!secret newt_secret"
+schema:
+  PANGOLIN_ENDPOINT: "str"
+  NEWT_ID: "str"
+  NEWT_SECRET: "str"
+  LOG_LEVEL: "list(trace|debug|info|notice|warning|error|fatal)?"
+# Ensure that environment variables are set correctly
+map:
+  - config:rw
+hassio_api: true
+homeassistant_api: true
+auth_api: true
+hassio_role: "admin"

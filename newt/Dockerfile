@@ -3,7 +3,7 @@
 FROM ghcr.io/hassio-addons/base:20.0.1
 
 # Download the newt binary
-RUN curl -fsSL -o /usr/bin/newt https://github.com/fosrl/newt/releases/download/1.15.0/newt_linux_amd64; \
+RUN curl -fsSL -o /usr/bin/newt https://github.com/fosrl/newt/releases/download/1.17.0/newt_linux_amd64; \
     chmod +x /usr/bin/newt
 
 # Copy the script into the container

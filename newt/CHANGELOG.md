@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.17.0
+- Updated newt version to 1.17.0
+
 ## Version 1.15.0
 - Updated newt version to 1.15.0
 
